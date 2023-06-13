@@ -1,24 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { StoryContainer } from "./components/StoryContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+    <div>
+      <div className=" bg-gray-100 py-20">
+        <div className="flex mx-auto max-w-[950px]">
+          <div>
+            <h2 className="text-4xl font-medium mb-5 mt-4">What's Tutoom?</h2>
+            <p className="text-2xl text-slate-500 max-w-[720px] mb-16">
+              It's a videoconferencing tool, CMS, and hosting platform in one.
+              Check it out.
+            </p>
+          </div>
+          <img
+            src="/images/i0.jpg"
+            alt="man sitting in his desktop"
+            width={450}
+            className="object-contain"
+          />
+        </div>
+      </div>
+      <div className="py-20">
+        <h2 className="text-4xl font-medium mb-5 text-center">
+          Tuttom fits your worflow
+        </h2>
+        <p className="text-2xl text-slate-500 max-w-[720px] mx-auto mb-16 text-center">
+          See how enterprises, agencies, startups, and freelancers power their
+          design processes with Tutoom
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <StoryContainer />
+      </div>
     </div>
   );
 }
