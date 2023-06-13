@@ -9,7 +9,7 @@ interface StoryProps {
 
 const Story: React.FC<StoryProps> = ({ description, imageUrl, title }) => {
   return (
-    <div className="bg-blue-100 text-white w-[330px] h-[330px] px-6 py-9 flex flex-col justify-between relative">
+    <div className="bg-blue-100 text-white w-[340px] h-[340px] px-6 py-7 flex flex-col justify-between relative text-start">
       <img
         src={imageUrl}
         alt={title}
@@ -22,10 +22,7 @@ const Story: React.FC<StoryProps> = ({ description, imageUrl, title }) => {
         </p>
       </div>
       <div className="z-10">
-        <ThemeButton
-          variant="outline"
-          className="flex items-center justify-center gap-2"
-        >
+        <ThemeButton variant="outline">
           Read the story
           <ArrowRightIcon className="w-5 h-5" />
         </ThemeButton>

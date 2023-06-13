@@ -1,33 +1,33 @@
 import { StoryContainer } from "./components/StoryContainer";
+import { Heading } from "./components/Heading";
+import { Description } from "./components/Description";
 
 function App() {
   return (
     <div>
-      <div className=" bg-gray-100 py-20">
-        <div className="flex mx-auto max-w-[950px]">
+      <div className="bg-gray-100 py-20">
+        <div className="px-20 mx-auto justify-between text-center max-w-screen-xl xl:flex xl:text-start">
           <div>
-            <h2 className="text-4xl font-medium mb-5 mt-4">What's Tutoom?</h2>
-            <p className="text-2xl text-slate-500 max-w-[720px] mb-16">
-              It's a videoconferencing tool, CMS, and hosting platform in one.
-              Check it out.
-            </p>
+            <Heading className="mt-4">What's Tutoom?</Heading>
+            <Description className="mt-4">
+              It's a videoconferencing tool, CMS, and
+            </Description>
+            <Description>hosting platform in one. Check</Description>
+            <Description>it out.</Description>
           </div>
           <img
             src="/images/i0.jpg"
             alt="man sitting in his desktop"
-            width={450}
-            className="object-contain"
+            className="object-contain w-full max-w-[600px] mt-10 mx-auto xl:mt-0 xl:w-[540px] xl:m-0"
           />
         </div>
       </div>
-      <div className="py-20">
-        <h2 className="text-4xl font-medium mb-5 text-center">
-          Tuttom fits your worflow
-        </h2>
-        <p className="text-2xl text-slate-500 max-w-[720px] mx-auto mb-16 text-center">
+      <div className="px-16 py-12 text-center max-w-screen-xl mx-auto">
+        <Heading>Tuttom fits your worflow</Heading>
+        <Description className="max-w-[800px] mx-auto mt-4 mb-16">
           See how enterprises, agencies, startups, and freelancers power their
-          design processes with Tutoom
-        </p>
+          design processes with Tutoom.
+        </Description>
         <StoryContainer />
       </div>
     </div>

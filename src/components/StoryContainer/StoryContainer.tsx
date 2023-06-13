@@ -24,8 +24,8 @@ const stories: Array<{ imageUrl: string; title: string; description: string }> =
 
 const StoryContainer = () => {
   return (
-    <div className="flex flex-col items-center">
-      <section className="grid grid-cols-3 gap-4 max-w-[1200px]">
+    <section className="mx-auto">
+      <div className="flex flex-wrap justify-center gap-6 max-w-[1200px]">
         {stories.map((story) => (
           <Story
             key={story.title}
@@ -34,14 +34,14 @@ const StoryContainer = () => {
             title={story.title}
           />
         ))}
-      </section>
-      <div className="mt-14">
-        <ThemeButton className="flex items-center justify-center gap-2">
+      </div>
+      <div>
+        <ThemeButton className="mx-auto mt-14">
           See all users stories
           <ArrowRightIcon className="w-5 h-5" />
         </ThemeButton>
       </div>
-    </div>
+    </section>
   );
 };
 
